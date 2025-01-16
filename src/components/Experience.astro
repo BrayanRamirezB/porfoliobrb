@@ -1,0 +1,45 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+    {
+        date: "Agosto 2023 - Diciembre 2024",
+        title: "Sistema de Detección de Movimiento usando Visión Artificial (Trabajo Terminal)",
+        company: "Escuela Superior de Cómputo (ESCOM)",
+        description: "Liderar un equipo de dos personas para diseñar un prototipo de sistema de detección de movimiento basado en Visión Artificial utilizando cámaras de seguridad según el patrón Modelo-Vista-Controlador (MVC), integrando módulos de alertas en tiempo real utilizando tecnologías como YOLOV8, OpenCV y PyQt6",
+        link: "https://github.com/BrayanRamirezB/TrabajoTerminal2024-B016"
+    },
+    {
+        date: "Marzo - Junio 2022",
+        title: "Sumi-Rest",
+        company: "Escuela Superior de Cómputo (ESCOM)",
+        description: "Liderar un equipo de tres personas para implementar una tienda en linea que suministre materias primas a mayoreo y menudeo exclusivamente a restaurantes utilizando la plataforma de eCommerce dedicada PrestaShop",
+        link: ""
+    },
+    {
+        date: "Octubre - Diciembre 2021",
+        title: "Editor de Diagramas de Flujo con Generación de Código",
+        company: "Escuela Superior de Cómputo (ESCOM)",
+        description: "Liderar un equipo de dos personas para diseñar un editor de diagramas de flujo utilizando HTML5, CSS3 y JavaScript, que permite la generación de código en lenguaje C.",
+        link: "https://github.com/BrayanRamirezB/Flowchart_Editor_NoFrameworks"
+    },
+    {
+        date: "Febrero - Agosto 2018",
+        title: "Sistema de Control y Orientación Escolar",
+        company: "Colegio de Estudios Científicos y Tecnológicos del Estado de México (CECyTEM)",
+        description: "Coordinar y supervisar todas las etapas del ciclo de vida del proyecto, colaborando en el diseño y desarrollo del sistema mediante el uso del lenguaje de programación Java y la base de datos MySQL.",
+        link: ""
+    }
+]
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+    {
+        EXPERIENCE.map((item) => (
+            <li>
+                <ExperienceItem {...item} />
+            </li>
+            ))
+    }
+</ol>
+

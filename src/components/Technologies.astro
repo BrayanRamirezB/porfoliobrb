@@ -1,0 +1,88 @@
+---
+import VSCode from "./icons/VSCode.astro";
+import GitHub from "./icons/Github.astro";
+import Git from "./icons/Git.astro";
+import HtmlIcon from "./icons/Html.astro";
+import CssIcon from "./icons/Css.astro";
+import JsIcon from "./icons/JavaScript.astro";
+import Clanguage from "./icons/Clanguage.astro";
+import Python from "./icons/Python.astro";
+import NodeJs from "./icons/NodeJs.astro";
+import ReactIcon from "./icons/React.astro";
+import AstroIcon from "./icons/AstroIcon.astro"
+import MySql from "./icons/MySql.astro";
+import MongoDB from "./icons/MongoDB.astro";
+
+const TECHNOLOGIES = {
+    HTML: {
+        name: "HTML",
+        icon: HtmlIcon
+    },
+    CSS: {
+        name: "CSS",
+        icon: CssIcon
+    },
+    Js:{
+        name: "JavaScript",
+        icon: JsIcon
+    },
+    C: {
+        name: "C",
+        icon: Clanguage
+    },
+    Python: {
+        name: "Python",
+        class: "", 
+        icon: Python
+    },
+    NodeJS: {
+        name: "NodeJs",
+        icon: NodeJs
+    },
+    React: {
+        name: "React",
+        icon: ReactIcon
+    },
+    Astro: {
+        name: "Astro",
+        icon: AstroIcon
+    },
+    Git: {
+        name: "Git",
+        icon: Git
+    },
+    Github: {
+        name: "GitHub",
+        icon: GitHub
+    },
+    VSCode: {
+        name: "VSCode",
+        icon: VSCode
+    },
+    MySQL: {
+        name: "MySql",
+        icon: MySql
+    },
+    MongoDB:{
+        name: "MongoDB",        
+        icon: MongoDB
+    }
+}
+
+const TECHNOLOGIES_ARRAY = [TECHNOLOGIES.HTML, TECHNOLOGIES.CSS, TECHNOLOGIES.Js, TECHNOLOGIES.C,  TECHNOLOGIES.Python, TECHNOLOGIES.NodeJS, TECHNOLOGIES.React, TECHNOLOGIES.Astro, TECHNOLOGIES.Git, TECHNOLOGIES.Github, TECHNOLOGIES.VSCode, TECHNOLOGIES.MySQL, TECHNOLOGIES.MongoDB]
+---
+<section class="bg-white dark:bg-transparent bg-opacity-20 backdrop-blur-xl rounded drop-shadow-lg">
+    <div class="flex flex-col items-center py-4 mx-auto max-w-screen-xl px-4">
+        <h2 class="mb-8 lg:mb-16 text-md font-semibold tracking-tight leading-tight text-center text-gray-900/60 dark:text-white/60">
+            Las tecnologías que he utilizado en el desarrollo de mis proyectos.
+        </h2>
+        <div class="grid grid-cols-3 gap-12 sm:gap-20 md:grid-cols-4 lg:grid-cols-6"> 
+            {TECHNOLOGIES_ARRAY.map((tech) => (
+                <span class="flex items-center justify-center px-1.5 py-1.5 size-16 rounded-md transition hover:bg-gray-300 dark:hover:bg-gray-800">
+                    <tech.icon class="size-14 fill-black dark:fill-white/90 " />
+                </span>
+            ))}
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,29 @@
+---
+import Archive from "./icons/Archive.astro";
+import ExternalIcon from "./icons/External.astro";
+
+interface Props {
+  title: string
+  company: string
+  description: string
+  link?: string
+  date: string
+}
+
+const { title, company, description, link, date } = Astro.props
+---
+
+<div class="mb-10 ms-6 pb-2 mt-10">            
+    <span class="absolute flex items-center justify-center size-6 rounded-full -start-3 ring-8 ring-[#f83600] bg-[#fe8c00]">
+        <Archive class="size-2.5 text-white " />
+    </span>
+    <h3 class="mb-0.5 text-xl font-bold text-[#f83600] dark:text-[#fe8c00]">{title}</h3>
+    <h4 class="mb-0.5 text-lg text-gray-600 dark:text-gray-300">{company}</h4>
+    <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{date}</time>
+    <p class="text-pretty mb-4 text-base font-normal text-gray-500 dark:text-gray-400">{description}</p>
+
+    {link && (<a href={link} target="_blank" rel="noopener noreferrer" role="link" class="shadow-md inline-flex gap-1 items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-[#f83600] focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-[#f83600] dark:bg-transparent dark:text-gray-400 dark:border-gray-600 dark:hover:text-[#fe8c00] dark:hover:bg-gray-800 dark:focus:ring-gray-700">
+        Saber más
+        <ExternalIcon class="" />
+    </a>)}
+</div>

@@ -1,0 +1,43 @@
+---
+import Github from "./icons/Github.astro";
+import LinkedIn from "./icons/LinkedIn.astro";
+import Mail from "./icons/Mail.astro";
+import SocialPill from "./SocialPill.astro";
+
+const pillClass = "inline-flex items-center justify-center gap-2 px-3 py-1 text-gray-800 transition bg-gray-100/30 border border-gray-300 shadow-lg rounded-full dark:bg-white/10 dark:border-gray-600 dark:text-white text-md hover:bg-gray-400 hover:border-gray-700 hover:text-white dark:hover:bg-white/60 dark:hover:border-gray-800 dark:hover:text-black group max-w-fit active:bg-black"
+---
+
+<div class="max-w-full">
+    <div class="space-y-8 md:space-y-0 md:space-x-8 rtl:space-x-reverse md:flex md:items-center md:justify-center">
+        <div class="w-full">
+            <h1 
+                class="mb-4 text-3xl font-bold tracking-tight text-gray-800 dark:text-white md:text-4xl lg:text-5xl text-pretty">
+                Hola👋, <br>mi nombre es
+                <span class="animate-pulse text-transparent bg-clip-text bg-gradient-to-r to-[#fe8c00] from-[#f83600]">
+                Brayan RB.
+                </span>
+            </h1>
+            <p class="mt-5 text-xl text-gray-500 lg:text-xl dark:text-gray-400 text-pretty">
+                Ingeniero en Sistemas Computacionales. De Chimalhuacán, México. Me especializo en el Desarrollo de Aplicaciones Web.
+            </p>
+        </div>
+        <div class="flex items-center justify-center rounded">
+            <img
+              class="rounded-full shadow-lg w-96 h-fits "
+              src="/avatar.webp"
+              alt="Brayan Ramirez"
+            />
+        </div>
+    </div>
+    <nav class="flex flex-wrap gap-4 mt-4">
+        <SocialPill href="https://github.com/BrayanRamirezB" class={pillClass} >
+            <Github class="size-6 fill-black dark:fill-white "/>Github
+        </SocialPill>
+        <SocialPill href="https://www.linkedin.com/in/brayan-rb-4b006b341/" class={pillClass} >
+            <LinkedIn class="size-6 fill-blue-600 dark:fill-white"/>LinkedIn
+        </SocialPill>
+        <SocialPill href="mailto:brbrayan1945@gmail.com" class={pillClass} >
+            <Mail class="size-6 "/>Contáctame
+        </SocialPill>
+    </nav>
+</div>

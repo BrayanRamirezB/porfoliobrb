@@ -1,0 +1,31 @@
+---
+import Github from "./icons/Github.astro";
+import LinkedIn from "./icons/LinkedIn.astro";
+import SocialPill from "./SocialPill.astro";
+
+const NAVITEMS = [
+    { name: 'Experiencia', href: '/#experiencia' },
+    { name: 'Proyectos', href: '/#proyectos' },
+    { name: 'Tecnologías', href: '/#tecnologias' },
+    { name: 'Sobre mí', href: '/#sobre-mi' },
+    { name: 'Contacto', href: 'mailto:brbrayan1945@gmail.com' },
+];
+---
+
+<header class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2">
+    <nav class="flex shadow-lg items-center justify-center px-3 text-sm font-medium rounded-full bg-white/70 dark:bg-black/30">
+        {
+            NAVITEMS.map((item) => (
+                <a href={item.href} class="relative block px-3 py-2 transition text-black dark:text-white/90 hover:text-[#0052D4] dark:hover:text-[#4364F7]">
+                    {item.name}
+                </a>
+            ))
+        }
+        <SocialPill href="https://github.com/BrayanRamirezB" class="px-3 py-2" >
+            <Github class="size-5 fill-black dark:fill-white opacity-70 transition hover:fill-[#0052D4] dark:hover:fill-[#4364F7]" />
+        </SocialPill>
+        <SocialPill href="https://www.linkedin.com/in/brayan-rb-4b006b341/" class="px-3 py-2" >       
+            <LinkedIn class="size-5 fill-black dark:fill-white opacity-70 transition hover:fill-[#0052D4] dark:hover:fill-[#4364F7]" />
+        </SocialPill>
+    </nav>
+</header>

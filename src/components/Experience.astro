@@ -1,33 +1,34 @@
 ---
+import { date } from "astro:schema";
 import ExperienceItem from "./ExperienceItem.astro";
 
 const EXPERIENCE = [
     {
+        date: "Enero 2025 - Actualidad",
+        title: "MictlanUI",
+        company: "Proyecto personal de código abierto",
+        description: "Desarrollé un Design System completo para estandarizar el diseño de interfaces en proyectos digitales. Utilizando herramientas como Astro, TailwindCSS y React. En donde diseñé y documenté componentes reutilizables como botones, formularios,modales, etc. Además, elaboré una guía de estilo detallada que incluye principios básicos, variantes, paleta de colores y ejemplos de uso.",
+        link: "https://mictlanuidev.netlify.app/"
+    },
+    {
         date: "Agosto 2023 - Diciembre 2024",
         title: "Sistema de Detección de Movimiento usando Visión Artificial (Trabajo Terminal)",
         company: "Escuela Superior de Cómputo (ESCOM)",
-        description: "Liderar un equipo de dos personas para diseñar un prototipo de sistema de detección de movimiento basado en Visión Artificial utilizando cámaras de seguridad según el patrón Modelo-Vista-Controlador (MVC), integrando módulos de alertas en tiempo real utilizando tecnologías como YOLOV8, OpenCV y PyQt6",
+        description: "Lideré un equipo de dos personas para diseñar un prototipo de sistema de detección de movimiento basado en Visión Artificial utilizando cámaras de seguridad según el patrón Modelo-Vista-Controlador (MVC), integrando módulos de alertas en tiempo real utilizando tecnologías como YOLOV8, OpenCV y PyQt6",
         link: "https://github.com/BrayanRamirezB/TrabajoTerminal2024-B016"
-    },
-    {
-        date: "Marzo - Junio 2022",
-        title: "Sumi-Rest",
-        company: "Escuela Superior de Cómputo (ESCOM)",
-        description: "Liderar un equipo de tres personas para implementar una tienda en linea que suministre materias primas a mayoreo y menudeo exclusivamente a restaurantes utilizando la plataforma de eCommerce dedicada PrestaShop",
-        link: ""
     },
     {
         date: "Octubre - Diciembre 2021",
         title: "Editor de Diagramas de Flujo con Generación de Código",
         company: "Escuela Superior de Cómputo (ESCOM)",
-        description: "Liderar un equipo de dos personas para diseñar un editor de diagramas de flujo utilizando HTML5, CSS3 y JavaScript, que permite la generación de código en lenguaje C.",
+        description: "Lideré un equipo de dos personas para diseñar un editor de diagramas de flujo utilizando HTML5, CSS3 y JavaScript, que permite la generación de código en lenguaje C.",
         link: "https://github.com/BrayanRamirezB/Flowchart_Editor_NoFrameworks"
     },
     {
         date: "Febrero - Agosto 2018",
         title: "Sistema de Control y Orientación Escolar",
         company: "Colegio de Estudios Científicos y Tecnológicos del Estado de México (CECyTEM)",
-        description: "Coordinar y supervisar todas las etapas del ciclo de vida del proyecto, colaborando en el diseño y desarrollo del sistema mediante el uso del lenguaje de programación Java y la base de datos MySQL.",
+        description: "Coordiné y supervisé todas las etapas del ciclo de vida del proyecto, colaborando en el diseño y desarrollo del sistema mediante el uso del lenguaje de programación Java y la base de datos MySQL.",
         link: ""
     }
 ]

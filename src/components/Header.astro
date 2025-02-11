@@ -2,6 +2,7 @@
 import Github from './icons/Github.astro'
 import LinkedIn from './icons/LinkedIn.astro'
 import SocialPill from './SocialPill.astro'
+import Theme from './Theme.jsx'
 
 const NAVITEMS = [
   { name: 'Proyectos destacados', href: '/#experiencia' },
@@ -41,5 +42,6 @@ const NAVITEMS = [
         class='size-5 fill-black dark:fill-white opacity-70 transition hover:fill-[#0052D4] dark:hover:fill-[#4364F7]'
       />
     </SocialPill>
+    <Theme client:only='react' />
   </nav>
 </header>

@@ -1,58 +1,50 @@
 ---
-import '@fontsource-variable/onest';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
+import '@fontsource-variable/onest'
+import Footer from '../components/Footer.astro'
+import Header from '../components/Header.astro'
 ---
 
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="description" content="Portafolio de BrayanRB. Especialista en Desarrollo Web y Programación." />
-		<link rel="icon" type="image" href="/avatar.webp" />
-		<meta name="generator" content={Astro.generator} />
-		<title>BrayanRB - Desarrollador y Programador Web</title>
-	</head>
-	<body class="relative text-black dark:text-white">
-		<div
-      class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-gray-50 dark:bg-gray-950
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width' />
+    <meta
+      name='description'
+      content='Portafolio de BrayanRB. Especialista en Desarrollo Web y Programación.'
+    />
+    <link rel='icon' type='image' href='/avatar.webp' />
+    <meta name='generator' content={Astro.generator} />
+    <title>BrayanRB - Desarrollador y Programador Web</title>
+  </head>
+  <body class='relative text-black dark:text-white'>
+    <div
+      class='absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-gray-50 dark:bg-gray-950
       bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))]
-      dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(2,27,121,0.7),rgba(15,12,41,0.2))]"></div>
-		<Header />
-		<slot />
-		<Footer />
-	</body>
+      dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(2,27,121,0.7),rgba(15,12,41,0.2))]'
+    >
+    </div>
+    <Header />
+    <slot />
+    <Footer />
+  </body>
 </html>
 
 <style is:global>
-	:root {
-		color-scheme: light dark;
-	}
+  :root {
+    color-scheme: light dark;
+  }
 
-	html {
-		background: rgba(0, 0, 0, 0.3);
-		font-family: 'Onest Variable', system-ui, sans-serif;
-		scroll-behavior: smooth;
-	}
+  html {
+    background: rgba(0, 0, 0, 0.3);
+    font-family: 'Onest Variable', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
 
-	body {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-		overscroll-behavior: none;
-	}
-
-	@media (prefers-color-scheme: dark) {
-        html {
-          color: rgb(255, 255, 255, 0.9);
-        }
-    }
-
-	@media (prefers-color-scheme: light) {
-		html {
-			color: rgba(0, 0, 0, 0.3);
-			background: rgb(255, 255, 255, 0.9);
-		}
-    }
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overscroll-behavior: none;
+  }
 </style>

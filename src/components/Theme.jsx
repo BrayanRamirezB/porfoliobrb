@@ -72,7 +72,7 @@ const Theme = () => {
   return (
     <button
       onClick={handleChangeTheme}
-      className='flex items-center justify-center size-6 transition text-black dark:text-white/90 hover:text-[#0052D4] dark:hover:text-[#4364F7]'
+      className='cursor-pointer flex items-center justify-center size-6 transition text-black dark:text-white/90 hover:text-[#0052D4] dark:hover:text-[#4364F7]'
     >
       {Icon}
     </button>

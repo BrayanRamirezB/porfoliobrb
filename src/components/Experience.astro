@@ -3,14 +3,6 @@ import ExperienceItem from './ExperienceItem.astro'
 
 const EXPERIENCE = [
   {
-    date: 'Febrero 2025',
-    title: 'DragonBall Wiki',
-    company: 'Proyecto personal de código abierto',
-    description:
-      'Desarrollé un sitio web para mostrar información detallada de personajes icónicos de las sagas de Dragon Ball Z, Dragon Ball GT, Dragon Ball Super y más. Diseñado y desarrollado desde cero con tecnologías como Astro 5, Tailwind 4 y TypeScript, este wiki ofrece una experiencia rápida, responsive y llena de detalles para los fans de Dragon Ball.',
-    link: 'https://dragonball-wiki-dev.netlify.app/'
-  },
-  {
     date: 'Enero 2025 - Actualidad',
     title: 'MictlanUI',
     company: 'Proyecto personal de código abierto',
@@ -18,6 +10,15 @@ const EXPERIENCE = [
       'Desarrollé un Design System completo para estandarizar el diseño de interfaces en proyectos digitales. Utilizando herramientas como Astro, TailwindCSS y React. En donde diseñé y documenté componentes reutilizables como botones, formularios,modales, etc. Además, elaboré una guía de estilo detallada que incluye principios básicos, variantes, paleta de colores y ejemplos de uso.',
     link: 'https://mictlanuidev.netlify.app/'
   },
+  {
+    date: 'Febrero 2025',
+    title: 'DragonBall Wiki',
+    company: 'Proyecto personal de código abierto',
+    description:
+      'Desarrollé un sitio web para mostrar información detallada de personajes icónicos de las sagas de Dragon Ball Z, Dragon Ball GT, Dragon Ball Super y más. Diseñado y desarrollado desde cero con tecnologías como Astro 5, Tailwind 4 y TypeScript, este wiki ofrece una experiencia rápida, responsive y llena de detalles para los fans de Dragon Ball.',
+    link: 'https://dragonball-wiki-dev.netlify.app/'
+  },
+
   {
     date: 'Agosto 2023 - Diciembre 2024',
     title:
@@ -40,7 +41,7 @@ const EXPERIENCE = [
 ]
 ---
 
-<ol class='relative border-s border-gray-200 dark:border-gray-700'>
+<ol class='relative border-s border-[#f83600]/40 dark:border-[#0052D4]/40'>
   {
     EXPERIENCE.map((item) => (
       <li>

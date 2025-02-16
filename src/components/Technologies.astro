@@ -98,23 +98,29 @@ const TECHNOLOGIES_ARRAY = [
 ]
 ---
 
-<section
-  class='bg-white dark:bg-transparent bg-opacity-20 backdrop-blur-xl rounded drop-shadow-lg'
->
+<section>
   <div class='flex flex-col items-center py-4 mx-auto max-w-screen-xl px-4'>
     <h2
-      class='mb-8 lg:mb-16 text-md font-semibold tracking-tight leading-tight text-center text-gray-900/60 dark:text-white/60'
+      class='mb-8 lg:mb-16 text-md font-semibold tracking-tight leading-tight text-center text-zinc-700/70 dark:text-neutral-100/70'
     >
-      Las tecnologías que he utilizado en el desarrollo de mis proyectos.
+      Stack que utilizo en el desarrollo de mis proyectos.
     </h2>
     <div
-      class='grid grid-cols-3 gap-12 sm:gap-20 md:grid-cols-4 lg:grid-cols-6'
+      class='grid grid-cols-3 gap-12 sm:gap-20 md:grid-cols-4 lg:grid-cols-5'
     >
       {
         TECHNOLOGIES_ARRAY.map((tech) => (
-          <span class='flex items-center justify-center px-1.5 py-1.5 size-16 rounded-md transition hover:bg-gray-300 dark:hover:bg-gray-800'>
-            <tech.icon class={`size-14 ${tech.class}`} />
-          </span>
+          <div class='flex flex-col items-center justify-center w-26 h-28 gap-2 rounded-md transition-all duration-300 ease-in-out group backdrop-blur-md border-0 shadow-lg bg-neutral-100/40 dark:bg-zinc-700/30 hover:bg-zinc-700/30 dark:hover:bg-neutral-100/20 cursor-default'>
+            <div class='group-hover:scale-110 transition-transform duration-300 ease-in-out'>
+              <tech.icon
+                class={`size-16 ${tech.class} flex items-center justify-center group-hover:animate-pulse`}
+              />
+            </div>
+
+            <div class='absolute invisible group-hover:visible text-center backdrop-blur-md border-0 shadow-lg text-neutral-100 bg-[#f83600] dark:bg-[#0052D4] transition-all duration-300 ease-in-out text-sm px-2 py-1 rounded-lg left-1/2 transform -translate-x-1/2 -translate-y-16'>
+              {tech.name}
+            </div>
+          </div>
         ))
       }
     </div>

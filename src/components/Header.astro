@@ -17,13 +17,13 @@ const NAVITEMS = [
   class='fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2'
 >
   <nav
-    class='flex shadow-lg items-center justify-center px-3 text-sm font-medium rounded-full bg-white/70 dark:bg-black/30'
+    class='flex flex-wrap md:flex-wrap shadow-lg dark:shadow-zinc-700/40 items-center justify-center px-2 lg:px-3 py-1 text-sm font-medium rounded-xl bg-neutral-100/10 dark:bg-zinc-700/40 backdrop-blur-md border-0'
   >
     {
       NAVITEMS.map((item) => (
         <a
           href={item.href}
-          class='relative block px-3 py-2 transition text-black dark:text-white/90 hover:text-[#0052D4] dark:hover:text-[#4364F7]'
+          class='relative block px-3 py-2 transition-colors font-semibold text-zinc-800 dark:text-neutral-100 duration-300 hover:text-[#f83600] dark:hover:text-[#4364F7]'
         >
           {item.name}
         </a>
@@ -31,7 +31,7 @@ const NAVITEMS = [
     }
     <SocialPill href='https://github.com/BrayanRamirezB' class='px-3 py-2'>
       <Github
-        class='size-5 fill-black dark:fill-white opacity-70 transition hover:fill-[#0052D4] dark:hover:fill-[#4364F7]'
+        class='size-5 fill-black dark:fill-white opacity-70 transition hover:fill-[#f83600] dark:hover:fill-[#4364F7]'
       />
     </SocialPill>
     <SocialPill
@@ -39,7 +39,7 @@ const NAVITEMS = [
       class='px-3 py-2'
     >
       <LinkedIn
-        class='size-5 fill-black dark:fill-white opacity-70 transition hover:fill-[#0052D4] dark:hover:fill-[#4364F7]'
+        class='size-5 fill-black dark:fill-white opacity-70 transition hover:fill-[#f83600] dark:hover:fill-[#4364F7]'
       />
     </SocialPill>
     <Theme client:only='react' />

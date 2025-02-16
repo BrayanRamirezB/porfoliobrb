@@ -132,18 +132,18 @@ const PROJECTS = [
           </div>
         </div>
         <div class='w-full md:w-1/2 md:max-w-lg'>
-          <h3 class='text-2xl font-bold text-[#f83600] dark:text-[#fe8c00]'>
+          <h3 class='text-2xl font-bold text-[#f83600] dark:text-[#0052D4]'>
             {title}
           </h3>
           <div class='flex flex-col flex-wrap mt-2'>
-            <div class='mb-2 text-gray-700 dark:text-gray-400 text-pretty'>
+            <div class='mb-2 text-zinc-700/80 dark:text-neutral-100/70 text-pretty'>
               {description}
             </div>
             <ul class='flex flex-row justify-center items-center mt-2 gap-x-2'>
               {tags.map((tag) => (
                 <li>
                   <span
-                    class={`shadow-md flex rounded-lg ${tag.class} py-2 px-2 hover:bg-gray-200 dark:hover:bg-gray-800`}
+                    class={`shadow-md flex rounded-full ${tag.class} py-2 px-2 border-0 backdrop-blur-md bg-neutral-100/80 dark:bg-zinc-700/40 hover:bg-zinc-700/40 dark:hover:bg-neutral-100/40 transition-all duration-300 ease-in-out hover:animate-[spin_5s_linear_infinite]`}
                   >
                     <tag.icon class='size-6' />
                   </span>
@@ -153,7 +153,7 @@ const PROJECTS = [
             <div class='flex items-center justify-center mt-2 gap-x-4'>
               {github && (
                 <LinkButton href={github}>
-                  <Github class='size-4 fill-black dark:fill-white/90' />
+                  <Github class='size-4 fill-zinc-700 dark:fill-neutral-100' />
                   Code
                 </LinkButton>
               )}

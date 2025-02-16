@@ -16,50 +16,62 @@ import MongoDB from './icons/MongoDB.astro'
 const TECHNOLOGIES = {
   HTML: {
     name: 'HTML',
+    class: '',
     icon: HtmlIcon
   },
   CSS: {
     name: 'CSS',
+    class: '',
     icon: CssIcon
   },
   Js: {
     name: 'JavaScript',
+    class: '',
     icon: JsIcon
   },
   NodeJS: {
     name: 'NodeJs',
+    class: '',
     icon: NodeJs
   },
   React: {
     name: 'React',
+    class: '',
     icon: ReactIcon
   },
   Astro: {
     name: 'Astro',
+    class: '',
     icon: AstroIcon
   },
   Git: {
     name: 'Git',
+    class: '',
     icon: Git
   },
   Github: {
     name: 'GitHub',
+    class: 'fill-black dark:fill-white/90',
     icon: GitHub
   },
   VSCode: {
     name: 'VSCode',
+    class: '',
     icon: VSCode
   },
   MySQL: {
     name: 'MySql',
+    class: '',
     icon: MySql
   },
   MongoDB: {
     name: 'MongoDB',
+    class: '',
     icon: MongoDB
   },
   C: {
     name: 'C',
+    class: '',
     icon: Clanguage
   },
   Python: {
@@ -101,7 +113,7 @@ const TECHNOLOGIES_ARRAY = [
       {
         TECHNOLOGIES_ARRAY.map((tech) => (
           <span class='flex items-center justify-center px-1.5 py-1.5 size-16 rounded-md transition hover:bg-gray-300 dark:hover:bg-gray-800'>
-            <tech.icon class='size-14 fill-black dark:fill-white/90 ' />
+            <tech.icon class={`size-14 ${tech.class}`} />
           </span>
         ))
       }

@@ -1,163 +1,173 @@
 ---
-import HtmlIcon from "./icons/Html.astro";
-import CssIcon from "./icons/Css.astro";
-import Github from "./icons/Github.astro";
-import JsIcon from "./icons/JavaScript.astro";
-import LinkButton from "./LinkButton.astro";
-import Link from "./icons/Link.astro";
-import NodeJs from "./icons/NodeJs.astro";
-import ReactIcon from "./icons/React.astro";
-import AstroIcon from "./icons/AstroIcon.astro"    
-import TailwindCss from "./icons/TailwindCss.astro";
+import HtmlIcon from './icons/Html.astro'
+import CssIcon from './icons/Css.astro'
+import Github from './icons/Github.astro'
+import JsIcon from './icons/JavaScript.astro'
+import LinkButton from './LinkButton.astro'
+import Link from './icons/Link.astro'
+import NodeJs from './icons/NodeJs.astro'
+import ReactIcon from './icons/React.astro'
+import AstroIcon from './icons/AstroIcon.astro'
+import TailwindCss from './icons/TailwindCss.astro'
+import TypeScript from './icons/TypeScript.astro'
 
 const TAGS = {
-    HTML: {
-        name: "HTML",
-        class: "",
-        icon: HtmlIcon
-    },
-    CSS: {
-        name: "CSS",
-        class: "",
-        icon: CssIcon
-    },
-    JS: {
-        name: "JavaScript",
-        class: "",
-        icon: JsIcon
-    },
-    NodeJs: {
-        name: "NodeJs",
-        class: "",
-        icon: NodeJs
-    },
-    React: {
-        name: "React",
-        class: "",
-        icon: ReactIcon
-    },
-    Astro: {
-        name: "Astro",
-        class: "",
-        icon: AstroIcon
-    },
-    TailwindCSS: {
-        name: "Tailwind CSS",
-        class: "",
-        icon: TailwindCss
-    }
+  HTML: {
+    name: 'HTML',
+    class: '',
+    icon: HtmlIcon
+  },
+  CSS: {
+    name: 'CSS',
+    class: '',
+    icon: CssIcon
+  },
+  JS: {
+    name: 'JavaScript',
+    class: '',
+    icon: JsIcon
+  },
+  NodeJs: {
+    name: 'NodeJs',
+    class: '',
+    icon: NodeJs
+  },
+  React: {
+    name: 'React',
+    class: '',
+    icon: ReactIcon
+  },
+  Astro: {
+    name: 'Astro',
+    class: '',
+    icon: AstroIcon
+  },
+  TailwindCSS: {
+    name: 'Tailwind CSS',
+    class: '',
+    icon: TailwindCss
+  },
+  TypeScript: {
+    name: 'TypeScript',
+    class: '',
+    icon: TypeScript
+  }
 }
 
 const PROJECTS = [
   {
-    title: "MictlanUI",
-    description: "Design System moderno y minimalista con multiples componentes altamente personalizables y reutilizables inspirados en Glassmorphism. Diseñado con TailwindCSS y React para crear sitios web detallados. Cuenta con una guía de estilo detallada y documentación de componentes. Además, todos los componentes incluyen multiples variantes, temas, colores y ejemplos de uso.",
-    link: "https://mictlanuidev.netlify.app/",
-    github: "https://github.com/BrayanRamirezB/mictlanui",
-    image: "/Projects/mictlanui.webp",
-    alt: "MictlanUI",
+    title: 'MictlanUI',
+    description:
+      'Design System moderno y minimalista con multiples componentes altamente personalizables y reutilizables inspirados en Glassmorphism. Diseñado con TailwindCSS y React para crear sitios web detallados. Cuenta con una guía de estilo detallada y documentación de componentes. Además, todos los componentes incluyen multiples variantes, temas, colores y ejemplos de uso.',
+    link: 'https://mictlanuidev.netlify.app/',
+    github: 'https://github.com/BrayanRamirezB/mictlanui',
+    image: '/Projects/mictlanui.webp',
+    alt: 'MictlanUI',
     tags: [TAGS.Astro, TAGS.TailwindCSS, TAGS.React]
   },
   {
-    title: "Clon Tesla Landing Page ",
+    title: 'DragonBall Wiki',
     description:
-      "Copia de la página web de tesla con un diseño moderno y una interfaz de usuario amigable. Creada desde cero con Astro y Tailwind CSS con la intención de aprender a crear sitios web con dichas tecnologías. ",
-    link: "",
-    github: "https://github.com/BrayanRamirezB/tesla-landing",
-    image: "/Projects/tesla-landing.webp",
-    alt: "Tesla Landing Page",
-    tags: [TAGS.Astro, TAGS.TailwindCSS]
+      'Este proyecto es una completa enciclopedia en línea que recopila información detallada de personajes icónicos de las sagas de Dragon Ball Z, Dragon Ball GT, Dragon Ball Super y más. Desarrollada desde cero con tecnologías modernas, esta wiki ofrece una experiencia rápida, responsive y llena de detalles para los fans de Dragon Ball. ',
+    link: 'https://dragonball-wiki-dev.netlify.app/',
+    github: 'https://github.com/BrayanRamirezB/dragonball-wiki',
+    image: '/Projects/dragonball-wiki.webp',
+    alt: 'DragonBall Wiki',
+    tags: [TAGS.TypeScript, TAGS.Astro, TAGS.TailwindCSS]
   },
   {
-    title: "Expense Tracker",
+    title: 'Expense Tracker',
     description:
-      "Aplicación web para gestionar los gastos. Permite visualizar una gráfica de gastos e ingresos mostrando el estado actual de forma clara y sencilla. Creada desde cero con React y Tailwind CSS.",
-    link: "https://expensetracker-dev.netlify.app/",
-    github: "https://github.com/BrayanRamirezB/react-expense-tracker",
-    image: "/Projects/react-expense-tracker.webp",
-    alt: "React Expense Tracker",
+      'Aplicación web para gestionar los gastos. Permite visualizar una gráfica de gastos e ingresos mostrando el estado actual de forma clara y sencilla. Creada desde cero con React y Tailwind CSS.',
+    link: 'https://expensetracker-dev.netlify.app/',
+    github: 'https://github.com/BrayanRamirezB/react-expense-tracker',
+    image: '/Projects/react-expense-tracker.webp',
+    alt: 'React Expense Tracker',
     tags: [TAGS.JS, TAGS.React, TAGS.TailwindCSS]
   },
   {
-    title: "Paint",
+    title: 'Paint',
     description:
-      "Versión simplificada del clásico programa Microsoft Paint, creado utilizando tecnologías web como HTML, CSS y JavaScript. La aplicación permite a los usuarios dibujar libremente en un lienzo digital, ofreciendo herramientas básicas como pinceles, selección de colores y la opción de borrar o limpiar el lienzo. ",
-    link: "https://simple-paint-dev.netlify.app/",
-    github: "https://github.com/BrayanRamirezB/paint-test",
-    image: "/Projects/paint.webp",
-    alt: "Paint",
+      'Versión simplificada del clásico programa Microsoft Paint, creado utilizando tecnologías web como HTML, CSS y JavaScript. La aplicación permite a los usuarios dibujar libremente en un lienzo digital, ofreciendo herramientas básicas como pinceles, selección de colores y la opción de borrar o limpiar el lienzo. ',
+    link: 'https://simple-paint-dev.netlify.app/',
+    github: 'https://github.com/BrayanRamirezB/paint-test',
+    image: '/Projects/paint.webp',
+    alt: 'Paint',
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JS]
   },
   {
-    title: "Stack Game",
+    title: 'Stack Game',
     description:
-      "Implementación del popular Stack Game, un juego de precisión donde el objetivo es apilar bloques uno encima del otro. Desarrollado utilizando tecnologías web como HTML, CSS y JavaScript, el juego desafía al jugador a mantener el control de la torre mientras los bloques se apilan.",
-    link: "https://stack-game-dev.netlify.app/",
-    github: "https://github.com/BrayanRamirezB/stack-game-test",
-    image: "/Projects/stack-game.webp",
-    alt: "Stack Game",
+      'Implementación del popular Stack Game, un juego de precisión donde el objetivo es apilar bloques uno encima del otro. Desarrollado utilizando tecnologías web como HTML, CSS y JavaScript, el juego desafía al jugador a mantener el control de la torre mientras los bloques se apilan.',
+    link: 'https://stack-game-dev.netlify.app/',
+    github: 'https://github.com/BrayanRamirezB/stack-game-test',
+    image: '/Projects/stack-game.webp',
+    alt: 'Stack Game',
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JS]
   },
   {
-    title: "Tetris",
+    title: 'Tetris',
     description:
-      "Recreación del clásico juego Tetris desarrollado con HTML, CSS y JavaScript, que ofrece una experiencia de juego fiel a la versión original, donde el jugador debe organizar piezas geométricas que caen desde la parte superior para completar líneas horizontales y ganar puntos. Cuenta con una interfaz visual sencilla y retro, controles intuitivos para mover, rotar y acelerar las piezas, detección de colisiones, eliminación de líneas completas. ",
-    link: "https://simple-tetris-dev.netlify.app/",
-    github: "https://github.com/BrayanRamirezB/tetris-prueba-tecnica",
-    image: "/Projects/tetris-game.webp",
-    alt: "Tetris",
+      'Recreación del clásico juego Tetris desarrollado con HTML, CSS y JavaScript, que ofrece una experiencia de juego fiel a la versión original. Cuenta con una interfaz visual sencilla y retro, controles intuitivos para mover, rotar y acelerar las piezas, detección de colisiones, eliminación de líneas completas. ',
+    link: 'https://simple-tetris-dev.netlify.app/',
+    github: 'https://github.com/BrayanRamirezB/tetris-prueba-tecnica',
+    image: '/Projects/tetris-game.webp',
+    alt: 'Tetris',
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JS]
-  },
-  {
-    title: "SpaceX Launch Page",
-    description:
-      "Página de lanzamientos de SpaceX. Muestra el estado actual de los lanzamientos y los detalles de cada uno. Creada con Astro y Tailwind CSS basandome en el curso de Astro de midudev.",
-    link: "",
-    github: "https://github.com/BrayanRamirezB/curso-Astro-part1",
-    image: "/Projects/SpaceX-launches.webp",
-    alt: "SpaceX Launch Page",
-    tags: [TAGS.Astro, TAGS.TailwindCSS]
   }
 ]
 ---
 
-<div class="flex flex-col gap-y-18 pt-8">
-    {PROJECTS.map(({ title, description, link, image, alt, tags, github }) => (
-        <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0 mb-10">
-            <div class="w-full md:w-1/2">
-                <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-                    <img alt={alt} class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
-                </div>
+<div class='flex flex-col gap-y-18 pt-8'>
+  {
+    PROJECTS.map(({ title, description, link, image, alt, tags, github }) => (
+      <article class='flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0 mb-10'>
+        <div class='w-full md:w-1/2'>
+          <div class='relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50'>
+            <img
+              alt={alt}
+              class='object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105'
+              src={image}
+              loading='lazy'
+            />
+          </div>
+        </div>
+        <div class='w-full md:w-1/2 md:max-w-lg'>
+          <h3 class='text-2xl font-bold text-[#f83600] dark:text-[#fe8c00]'>
+            {title}
+          </h3>
+          <div class='flex flex-col flex-wrap mt-2'>
+            <div class='mb-2 text-gray-700 dark:text-gray-400 text-pretty'>
+              {description}
             </div>
-            <div class="w-full md:w-1/2 md:max-w-lg">
-                <h3 class="text-2xl font-bold text-[#f83600] dark:text-[#fe8c00]">{title}</h3>
-                <div class="flex flex-col flex-wrap mt-2">
-                    <div class="mb-2 text-gray-700 dark:text-gray-400 text-pretty">{description}</div>
-                    <ul class="flex flex-row justify-center items-center mt-2 gap-x-2">
-                        {tags.map((tag) => (
-                            <li>
-                                <span class={`shadow-md flex rounded-lg ${tag.class} py-2 px-2 hover:bg-gray-200 dark:hover:bg-gray-800`}>
-                                    <tag.icon class="size-6" />
-                                </span>
-                            </li>
-                        ))}
-                    </ul>
-                    <div class="flex items-center justify-center mt-2 gap-x-4">
-                        {github && (
-                            <LinkButton href={github}>
-                                <Github class="size-4 fill-black dark:fill-white/90" />
-                                Code
-                            </LinkButton>
-                        )}
-                        {link && (
-                            <LinkButton href={link}>
-                                <Link class="size-4" />
-                                Preview
-                            </LinkButton>
-                        )}
-                    </div>
-                </div>
+            <ul class='flex flex-row justify-center items-center mt-2 gap-x-2'>
+              {tags.map((tag) => (
+                <li>
+                  <span
+                    class={`shadow-md flex rounded-lg ${tag.class} py-2 px-2 hover:bg-gray-200 dark:hover:bg-gray-800`}
+                  >
+                    <tag.icon class='size-6' />
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <div class='flex items-center justify-center mt-2 gap-x-4'>
+              {github && (
+                <LinkButton href={github}>
+                  <Github class='size-4 fill-black dark:fill-white/90' />
+                  Code
+                </LinkButton>
+              )}
+              {link && (
+                <LinkButton href={link}>
+                  <Link class='size-4' />
+                  Preview
+                </LinkButton>
+              )}
             </div>
-        </article>    
-    ))}
+          </div>
+        </div>
+      </article>
+    ))
+  }
 </div>

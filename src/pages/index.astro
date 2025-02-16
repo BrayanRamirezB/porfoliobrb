@@ -1,52 +1,52 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import AboutMe from '../components/AboutMe.astro';
-import Briefcase from '../components/icons/Briefcase.astro';
-import CodeIcon from '../components/icons/Code.astro';
-import Device from '../components/icons/Device.astro';
-import Experience from '../components/Experience.astro';
-import Hero from '../components/Hero.astro';
-import Projects from '../components/Projects.astro';
-import SectionContainer from '../components/SectionContainer.astro';
-import Technologies from '../components/Technologies.astro';
-import TitleSection from '../components/TitleSection.astro';
-import UserIcon from '../components/icons/User.astro';
+import Layout from '../layouts/Layout.astro'
+import AboutMe from '../components/AboutMe.astro'
+import Briefcase from '../components/icons/Briefcase.astro'
+import CodeIcon from '../components/icons/Code.astro'
+import Device from '../components/icons/Device.astro'
+import Experience from '../components/Experience.astro'
+import Hero from '../components/Hero.astro'
+import Projects from '../components/Projects.astro'
+import SectionContainer from '../components/SectionContainer.astro'
+import Technologies from '../components/Technologies.astro'
+import TitleSection from '../components/TitleSection.astro'
+import UserIcon from '../components/icons/User.astro'
 ---
 
 <Layout>
-	<main class="px-4">
-		<SectionContainer class="mt-8 sm:mt-0 py-16 md:py-36">
-			<Hero />
-		</SectionContainer>
-		<div class="space-y-22">
-			<SectionContainer id="experiencia">
-				<TitleSection>
-					<Briefcase class="size-8 fill-black dark:fill-white/90" />
-						Proyectos destacados
-				</TitleSection>
-				<Experience />
-			</SectionContainer>
-			<SectionContainer id="proyectos" class="mt-12">
-				<TitleSection>
-					<CodeIcon class="size-8 text-black dark:text-white/90" />
-					Proyectos
-				</TitleSection>
-				<Projects />
-			</SectionContainer>
-			<SectionContainer id="tecnologias" class="mt-10">
-				<TitleSection>
-					<Device class="size-8 text-black dark:text-white/90"/>
-					Tecnologías
-				</TitleSection>
-				<Technologies />
-			</SectionContainer>
-			<SectionContainer id="sobre-mi" class="mt-12">
-				<TitleSection>
-					<UserIcon class="size-8 text-black dark:text-white/90"/>
-					Sobre mí
-				</TitleSection>
-				<AboutMe />
-			</SectionContainer>
-		</div>
-	</main>
+  <main class='px-4'>
+    <SectionContainer class='mt-8 sm:mt-0 py-16 md:py-36'>
+      <Hero />
+    </SectionContainer>
+    <div class='space-y-22'>
+      <SectionContainer id='experiencia'>
+        <TitleSection>
+          <Briefcase class='size-8 fill-black dark:fill-white/90' />
+          Experiencia
+        </TitleSection>
+        <Experience />
+      </SectionContainer>
+      <SectionContainer id='proyectos' class='mt-12'>
+        <TitleSection>
+          <CodeIcon class='size-8 text-black dark:text-white/90' />
+          Proyectos
+        </TitleSection>
+        <Projects />
+      </SectionContainer>
+      <SectionContainer id='tecnologias' class='mt-10'>
+        <TitleSection>
+          <Device class='size-8 text-black dark:text-white/90' />
+          Tecnologías
+        </TitleSection>
+        <Technologies />
+      </SectionContainer>
+      <SectionContainer id='sobre-mi' class='mt-12'>
+        <TitleSection>
+          <UserIcon class='size-8 text-black dark:text-white/90' />
+          Sobre mí
+        </TitleSection>
+        <AboutMe />
+      </SectionContainer>
+    </div>
+  </main>
 </Layout>

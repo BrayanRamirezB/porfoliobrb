@@ -16,6 +16,18 @@ import Header from '../components/Header.astro'
     <link rel='icon' type='image' href='/avatar.webp' />
     <meta name='generator' content={Astro.generator} />
     <title>BrayanRB - Desarrollador y Programador Web</title>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const lamp = document.getElementById('lamp')
+
+        if (lamp instanceof HTMLElement) {
+          document.addEventListener('mousemove', (e) => {
+            lamp.style.left = e.clientX - lamp.offsetWidth / 2 + 'px'
+            lamp.style.top = e.clientY - lamp.offsetHeight / 2 + 'px'
+          })
+        }
+      })
+    </script>
   </head>
   <body class='relative text-black dark:text-white'>
     <div
@@ -27,6 +39,11 @@ import Header from '../components/Header.astro'
     <Header />
     <slot />
     <Footer />
+    <div
+      id='lamp'
+      class='pointer-events-none fixed size-30 rounded-full dark:bg-radial dark:from-[#4364F7]/20 dark:via-[#4364F7]/5 dark:to-transparent border-0 blur-md'
+    >
+    </div>
   </body>
 </html>
 

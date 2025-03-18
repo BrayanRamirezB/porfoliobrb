@@ -15,18 +15,21 @@ import UserIcon from '../components/icons/User.astro'
 
 <Layout>
   <main class='px-4'>
-    <SectionContainer id='inicio' class='mt-10 sm:mt-0 py-22 md:py-36'>
+    <SectionContainer
+      id='inicio'
+      class='mt-10 sm:mt-0 py-22 md:py-36 animate-fade-in-up'
+    >
       <Hero />
     </SectionContainer>
     <div class='space-y-22'>
-      <SectionContainer id='experiencia'>
+      <!-- <SectionContainer id='experiencia'>
         <TitleSection>
           <Briefcase class='size-8 fill-[#f83600] dark:fill-[#0052D4]' />
           Experiencia
         </TitleSection>
         <Experience />
-      </SectionContainer>
-      <SectionContainer id='proyectos' class='mt-12'>
+      </SectionContainer> -->
+      <SectionContainer id='proyectos' class='animate-fade-in-up'>
         <TitleSection>
           <CodeIcon class='size-8 text-[#f83600] dark:text-[#0052D4]' />
           Proyectos

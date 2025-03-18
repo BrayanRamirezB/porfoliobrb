@@ -5,7 +5,7 @@ import SocialPill from './SocialPill.astro'
 import Theme from './Theme.jsx'
 
 const NAVITEMS = [
-  { name: 'Experiencia', href: '/#experiencia' },
+  // { name: 'Experiencia', href: '/#experiencia' },
   { name: 'Proyectos', href: '/#proyectos' },
   { name: 'Tecnologías', href: '/#tecnologias' },
   { name: 'Sobre mí', href: '/#sobre-mi' },
@@ -14,10 +14,10 @@ const NAVITEMS = [
 ---
 
 <header
-  class='fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2'
+  class='fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2 animate-expand-horizontally'
 >
   <nav
-    class='flex flex-wrap md:flex-wrap shadow-lg dark:shadow-zinc-700/40 items-center justify-center px-2 lg:px-3 py-1 text-sm font-medium rounded-xl bg-neutral-100/10 dark:bg-zinc-700/40 backdrop-blur-md border-0'
+    class='flex flex-wrap md:flex-wrap shadow-lg animate-blurred-fade-in dark:shadow-zinc-700/40 saturate-150 items-center justify-center px-2 lg:px-3 py-1 text-sm font-medium rounded-xl bg-neutral-100/10 dark:bg-zinc-700/40 backdrop-blur-md border-0'
   >
     {
       NAVITEMS.map((item) => (

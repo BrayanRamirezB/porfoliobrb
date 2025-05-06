@@ -3,6 +3,7 @@ import Github from './icons/Github.astro'
 import LinkedIn from './icons/LinkedIn.astro'
 import Mail from './icons/Mail.astro'
 import SocialPill from './SocialPill.astro'
+import Cv from './icons/Cv.astro'
 
 const pillClass =
   'inline-flex items-center justify-center gap-2 px-3 py-1.5 border-0 shadow-lg backdrop-blur-md rounded-xl text-md text-zinc-800 dark:text-neutral-100 bg-neutral-100/10 dark:bg-zinc-700/30 hover:text-neutral-100 dark:hover:text-neutral-300 hover:bg-[#f83600]/80 dark:hover:bg-[#0052D4]/80 group max-w-fit transition-all duration-300 ease-in-out hover:-translate-y-1'
@@ -58,7 +59,7 @@ const pillClass =
     </SocialPill>
 
     <SocialPill href='/BrayanRB_CV.pdf' class={pillClass}>
-      <span class='size-6'>📄</span>CV
+      <Cv class='size-6' />CV
     </SocialPill>
   </nav>
 </div>

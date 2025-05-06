@@ -16,6 +16,45 @@ import Header from '../components/Header.astro'
     <link rel='icon' type='image' href='/avatar.webp' />
     <meta name='generator' content={Astro.generator} />
     <title>BrayanRB - Desarrollador y Programador Web</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property='og:title'
+      content='BrayanRB - Desarrollador y Programador Web'
+    />
+    <meta
+      property='og:description'
+      content='Portafolio de BrayanRB. Especialista en Desarrollo Web y Programación.'
+    />
+    <meta property='og:image' content='/brayanphoto.webp' />
+    <meta property='og:url' content='https://brayanrb.dev' />
+    <meta property='og:type' content='website' />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name='twitter:card' content='summary_large_image' />
+    <meta
+      name='twitter:title'
+      content='BrayanRB - Desarrollador y Programador Web'
+    />
+    <meta
+      name='twitter:description'
+      content='Portafolio de BrayanRB. Especialista en Desarrollo Web y Programación.'
+    />
+    <meta name='twitter:image' content='/brayanphoto.webp' />
+
+    <!-- JSON-LD Structured Data -->
+    <script type='application/ld+json'>
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "BrayanRB",
+        "url": "https://porfoliobrayanrb.netlify.app/",
+        "image": "/brayanphoto.webp",
+        "jobTitle": "Desarrollador y Programador Web",
+        "description": "Especialista en Desarrollo Web y Programación."
+      }
+    </script>
+
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         const lamp = document.getElementById('lamp')
